@@ -6,4 +6,5 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   site: 'https://tukemono-hu.github.io',
   base: '/Eigo-House',
+  trailingSlash: 'always',
 });

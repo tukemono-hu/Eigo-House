@@ -1,0 +1,57 @@
+```astro
+---
+import Layout from '../layouts/Layout.astro';
+
+// ここに記事を追加すると、カードが自動的に表示されます。
+const sections = [
+  {
+    heading: '品詞',
+    articles: [
+      { title: '冠詞', english: 'Articles', href: '/grammar/article' },
+
+    ],
+  },
+
+
+
+];
+---
+
+<Layout title="英文法 | Eigo house">
+  <main class="home-content">
+    <div class="setumei-white">
+      <div class="position">
+        <p class="home-title">英文法</p>
+        <p class="english-title">English grammar</p>
+        <p class="breadcrumb">
+          <a href="/">HOME</a> &gt; 英文法
+        </p>
+      </div>
+
+      {sections.map((section) => (
+        <>
+          <span class="midasi1">{section.heading}</span>
+
+          
+            {section.articles.map((article) => (
+              <a href={article.href} class="category-link">
+                <div class="category-box">
+              
+                  <span class="category">
+                    {article.title}
+                  </span>
+
+                  <span class="category-e">
+                    {article.english}
+                  </span>
+                </div>
+              </a>
+            ))}
+        </>
+      ))}
+    </div>
+
+
+  </main>
+</Layout>
+```

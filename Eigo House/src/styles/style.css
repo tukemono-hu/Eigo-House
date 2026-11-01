@@ -210,13 +210,11 @@ display: block
 }
 
 
-p{
-
-margin-top: 40px;
-margin-top: 40px;
-letter-spacing: 1.5px;
- line-height: 2.0;
- color: #252525;
+p {
+    margin-top: 40px;
+    letter-spacing: 1.5px;
+    line-height: 2.0;
+    color: #252525;
 }
 
 
@@ -586,5 +584,42 @@ font-size: 15px;
 
 
 
+/* スマートフォン対応 */
+@media (max-width: 900px) {
 
+    .home-content,
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-content {
+        width: 100%;
+    }
+
+    .setumei-white,
+    .setumei-green,
+    .setumei-blue {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .position {
+        width: 100%;
+    }
+
+    .osusume {
+        display: none;
+    }
+
+    .article-item {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .article-description {
+        width: 100%;
+    }
+}
 

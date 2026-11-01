@@ -7,7 +7,7 @@ const sections = [
   {
     heading: '品詞',
     articles: [
-      { title: '冠詞', english: 'Articles', href: '/grammar/article' },
+    { title: '冠詞', english: 'Articles', href: `${import.meta.env.BASE_URL}grammar/article/` },
 
     ],
   },
@@ -24,7 +24,7 @@ const sections = [
         <p class="home-title">英文法</p>
         <p class="english-title">English grammar</p>
         <p class="breadcrumb">
-          <a href="/">HOME</a> &gt; 英文法
+          <a href={import.meta.env.BASE_URL}>HOME</a>
         </p>
       </div>
 

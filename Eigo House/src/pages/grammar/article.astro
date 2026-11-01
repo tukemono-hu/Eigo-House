@@ -15,14 +15,14 @@ import Layout from "../../layouts/Layout.astro";
         <p class="english-title">Article</p>
 
         <p class="breadcrumb">
-          <a href="/">HOME</a> &gt;
-          <a href="/grammar">英文法</a> &gt;
-          冠詞
+        <a href={import.meta.env.BASE_URL}>HOME</a> &gt;
+        <a href={`${import.meta.env.BASE_URL}grammar/`}>英文法</a> &gt;
+        冠詞
         </p>
       </div>
 
 
-  <a href="/grammar/article/the" class="article-link">
+  <a href={`${import.meta.env.BASE_URL}grammar/article/the/`} class="article-link">
   <div class="article-item">
     <div class="article-box">
     <h2>イメージが大切</h2>
@@ -45,7 +45,7 @@ import Layout from "../../layouts/Layout.astro";
 
 
 
-<a href="/grammar/article/a" class="article-link">
+<a href={`${import.meta.env.BASE_URL}grammar/article/a/`} class="article-link">
   <div class="article-item">
     <div class="article-box">
     <h2>正しく理解する</h2>
@@ -84,4 +84,3 @@ import Layout from "../../layouts/Layout.astro";
 
   <!-- 以下、冠詞の記事 -->
 
-</Layout>
